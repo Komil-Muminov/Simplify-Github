@@ -71,9 +71,9 @@
 	.slider_buy-btn {
 		font-size: 16px;
 		bottom: 5%;
-		left: 33%;
+		left: 13%;
 		color: var(--text-black);
-		padding: 5px 30px 5px 30px;
+		padding: 5px 10px 5px 10px;
 		border-radius: 10px;
 		background-color: var(--text-orange);
 		text-align: center;
