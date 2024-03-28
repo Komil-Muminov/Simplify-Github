@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+#root {
+	--body-bg: rgba(243, 241, 241, 0.366);
+	--text-black: #000;
+	--text-orange: #ffbe1f;
+	--text-white: #ffffff;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: local("Muller-Bold"), url(./assets/fonts/MullerBold.woff) format("woff"),
+		url(./assets/fonts/MullerBold.woff2) format("woff2");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: local("Muller-Medium"),
+		url(./assets/fonts/MullerMedium.woff) format("woff"),
+		url(./assets/fonts/MullerMedium.woff2) format("woff2");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: local("Muller-Regular"),
+		url(./assets/fonts/MullerRegular.woff) format("woff"),
+		url(./assets/fonts/MullerRegular.woff2) format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: local("Muller-Light"),
+		url(./assets/fonts/MullerLight.woff) format("woff"),
+		url(./assets/fonts/MullerLight.woff2) format("woff2");
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+}
+
+*,
+*::before,
+::after {
+	box-sizing: border-box;
+	font-family: "Muller", sans-serif;
+	font-weight: 400;
+}
+
+body {
+	background-color: var(--body-bg);
+}
+
+/* Custom */
+.container {
+	max-width: 1920px;
+	padding: 0 75px;
+	margin: 0 auto;
+}
+
+.sections {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.sections__title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		padding: 20px;
+	}
+}
+

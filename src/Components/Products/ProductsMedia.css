@@ -1,0 +1,27 @@
+@media screen and (max-width: 1366px) {
+	.card__list {
+		gap: 10px;
+	}
+
+	.card__item {
+		width: calc((100% - 10px * 2) / 3);
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.card__item {
+		width: calc((100% - 10px) / 2);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.card__item {
+		width: calc((100% - 10px) / 2);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.card__item {
+		width: 100%;
+	}
+}

@@ -1,0 +1,9 @@
+@media screen and (max-width: 576px) {
+	.links__content {
+		display: none;
+	}
+	.nav {
+		justify-content: center;
+		align-items: center;
+	}
+}
