@@ -3,3 +3,11 @@
 	width: 100%;
 	height: auto;
 }
+
+.buy_btn {
+	padding: 20px 25px 20px 25px;
+	text-align: center;
+	color: var(--text-black);
+	background: var(--text-orange);
+	border-radius: 15px;
+}
