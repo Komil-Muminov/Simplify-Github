@@ -7,12 +7,12 @@ export const Navigation = () => {
 		<>
 			<section className="sections">
 				<div className="container">
-					<nav className="nav flex justify-between items-center">
+					<nav className="nav">
 						<div className="log__content flex items-center gap-5">
 							<Link to="/">
 								<img src={log} className="log_img" />
 							</Link>
-							<p className=" select-none">Simplify</p>
+							<p className="log__text select-none">Simplify</p>
 						</div>
 						<div className="links__content">
 							<Link to="/">Главная</Link>

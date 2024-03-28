@@ -3,3 +3,8 @@
 	min-height: 70px;
 	border-radius: 20px;
 }
+
+.log__text {
+	font-weight: 600;
+	font-size: 23px;
+}
