@@ -44,11 +44,11 @@
 .slider_buy-btn {
 	content: "";
 	position: absolute;
-	font-size: 30px;
+	font-size: 20px;
 	bottom: 5%;
-	left: 43%;
+	left: 33%;
 	color: var(--text-black);
-	padding: 5px 80px 5px 80px;
+	padding: 5px 60px 5px 60px;
 	border-radius: 10px;
 	background-color: var(--text-orange);
 	text-align: center;

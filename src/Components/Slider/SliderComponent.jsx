@@ -18,12 +18,12 @@ const SliderComponent = () => {
 				>
 					<SwiperSlide className="slider_buy-content">
 						<img src={img} alt="" className="slider_img" />
-						<a className="slider_buy-btn">Buy</a>
+						<a className="slider_buy-btn">Компонент купить</a>
 					</SwiperSlide>
 
 					<SwiperSlide className="slider_buy-content">
 						<img src={img2} alt="" className="slider_img" />
-						<a className="slider_buy-btn">Buy</a>
+						<a className="slider_buy-btn">Компонент купить</a>
 					</SwiperSlide>
 				</Swiper>
 			</div>
