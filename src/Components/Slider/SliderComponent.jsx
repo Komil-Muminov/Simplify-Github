@@ -23,7 +23,7 @@ const SliderComponent = () => {
 
 					<SwiperSlide className="slider_buy-content">
 						<img src={img2} alt="" className="slider_img" />
-						<a className="slider_buy-btn">Компонент купить 111</a>
+						<a className="slider_buy-btn">Компонент купить</a>
 					</SwiperSlide>
 				</Swiper>
 			</div>
