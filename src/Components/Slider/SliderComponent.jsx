@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
@@ -17,13 +18,17 @@ const SliderComponent = () => {
 					className="mySwiper"
 				>
 					<SwiperSlide className="slider_buy-content">
-						<img src={img} alt="" className="slider_img" />
-						<a className="slider_buy-btn">Компонент купить</a>
+						<Link>
+							<img src={img} alt="" className="slider_img" />
+						</Link>
+						{/* <a className="slider_buy-btn">Компонент купить</a> */}
 					</SwiperSlide>
 
 					<SwiperSlide className="slider_buy-content">
-						<img src={img2} alt="" className="slider_img" />
-						<a className="slider_buy-btn">Компонент купить</a>
+						<Link>
+							<img src={img2} alt="" className="slider_img" />
+						</Link>
+						{/* <a className="slider_buy-btn">Компонент купить</a> */}
 					</SwiperSlide>
 				</Swiper>
 			</div>

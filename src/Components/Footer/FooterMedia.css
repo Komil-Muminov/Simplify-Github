@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+	.footer__content {
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	.footer_center-content {
+		margin-bottom: 10px;
+	}
+
+	.footer_left-content {
+		margin-bottom: 10px;
+	}
+
+	.footer_right {
+		margin-bottom: 10px;
+	}
+}
