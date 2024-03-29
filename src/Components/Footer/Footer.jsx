@@ -65,7 +65,7 @@ export const Footer = () => {
 								</div>
 							</div>
 						</div>
-						<p className="footer_author">© Комил Муминов ff</p>
+						<p className="footer_author">© Комил Муминов</p>
 					</div>
 				</div>
 			</section>
