@@ -8,6 +8,7 @@
 	--text-black: #000;
 	--text-orange: #ffbe1f;
 	--text-white: #ffffff;
+	--text-gray: #9ba1a7;
 }
 
 @font-face {
@@ -83,4 +84,3 @@ body {
 		padding: 20px;
 	}
 }
-
