@@ -4,12 +4,24 @@
 		flex-wrap: wrap-reverse;
 	}
 
+	.footer_author {
+		content: "";
+		position: absolute;
+		left: 20%;
+		bottom: 0;
+		color: var(--text-gray);
+	}
+
 	.footer_center-content {
 		margin-bottom: 10px;
 	}
 
 	.footer_left-content {
 		margin-bottom: 10px;
+	}
+
+	.footer_adress {
+		margin-bottom: 20px;
 	}
 
 	.footer_right {
