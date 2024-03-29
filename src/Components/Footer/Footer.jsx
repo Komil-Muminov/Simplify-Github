@@ -11,16 +11,17 @@ export const Footer = () => {
 			<section className="sections">
 				<div className="container">
 					<div className="footer__content">
+						{/* <span className="bg_img"></span> */}
 						<div className="footer_left">
 							<div className="footer_left-content">
 								<h2 className="secondary__titl footer_tel-title">
 									Телефоны справочной службы
 								</h2>
-								<Link href="tel:+992900000000" className="links footer_tel">
+								<Link href="tel:+992900000000" className="links footer_link">
 									+992900000000
 								</Link>
 
-								<Link href="tel:+992900000000" className="links footer_tel">
+								<Link href="tel:+992900000000" className="links footer_link">
 									+992900000000
 								</Link>
 
@@ -52,8 +53,6 @@ export const Footer = () => {
 								<div className="social_icons-content">
 									<Link className="footer_social">
 										<img src={insta} alt="instagram" />
-
-										{/* <img src={insta} alt="instagram" className="social_svg" /> */}
 									</Link>
 
 									<Link className="footer_social">

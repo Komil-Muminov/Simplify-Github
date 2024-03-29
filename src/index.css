@@ -7,8 +7,11 @@
 	--body-bg: rgba(243, 241, 241, 0.366);
 	--text-black: #000;
 	--text-orange: #ffbe1f;
+	--text-orange-hover: #e4ac1dd1;
 	--text-white: #ffffff;
 	--text-gray: #9ba1a7;
+	--text-orange-focus: #ffaf37;
+	--text-orange-active: #e1670e;
 }
 
 @font-face {
