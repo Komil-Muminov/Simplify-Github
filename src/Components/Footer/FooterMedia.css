@@ -7,7 +7,7 @@
 	.footer_author {
 		content: "";
 		position: absolute;
-		left: 20%;
+		left: 25%;
 		bottom: 0;
 		color: var(--text-gray);
 	}
