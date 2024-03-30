@@ -1,6 +1,6 @@
 import "./cardContent.css";
 import { BuyBtn } from "../../Helpers/BuyBtn/BuyBtn";
-export const Card = ({ title, desc, img }) => {
+export const Card = ({ title, desc, img, quantity }) => {
 	return (
 		<>
 			<div className="cards">
@@ -9,6 +9,7 @@ export const Card = ({ title, desc, img }) => {
 					<span className="discounts_presents">Блок скидок</span>
 					<p className="card__info-title"> Блок с Title и Desc - {title}</p>
 					<p className="card__info-desc"> Блок с Title и Desc - {desc}</p>
+					<span>Количество: {quantity}</span>
 					<BuyBtn />
 					{/* <a className="btn buy_btn">Кнопка купить</a> */}
 				</div>
