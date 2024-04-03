@@ -1,14 +1,15 @@
 import "./BuyBtn.css";
 // import { Link } from "react-router-dom";
 import { products } from "../../Products/CardData/Products";
+import { useEffect } from "react";
 
 export const BuyBtn = () => {
 	const handlePost = async () => {
-		const data = products.map(({ id, title, desc, img }) => ({
+		const data = products.map(({ id, title, img, desc }) => ({
 			id,
 			title,
-			desc,
 			img,
+			desc,
 		}));
 		try {
 			const response = await fetch("http://localhost:3000/productsServer", {
@@ -18,13 +19,14 @@ export const BuyBtn = () => {
 				},
 				body: JSON.stringify(data),
 			});
-			if (response.ok) {
-				console.log("Данные успешно отправлены");
+			if (!response.ok) {
+				console.log(`Ошибка ${response.status && response.statusText}`);
+			} else {
+				console.log(`Данные успешно отправлены ${JSON.stringify(data)}`);
 			}
 		} catch (error) {
-			console.log(error);
+			console.log(`show ERRO:${error}`);
 		}
-		// Ваш код здесь.
 	};
 	return (
 		<>

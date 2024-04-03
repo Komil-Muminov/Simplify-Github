@@ -1,5 +1,6 @@
 import "./cardContent.css";
 import { BuyBtn } from "../../Helpers/BuyBtn/BuyBtn";
+import { products } from "../CardData/Products";
 export const Card = ({ title, desc, img, quantity }) => {
 	return (
 		<>
@@ -10,7 +11,7 @@ export const Card = ({ title, desc, img, quantity }) => {
 					<p className="card__info-title"> Блок с Title и Desc - {title}</p>
 					<p className="card__info-desc"> Блок с Title и Desc - {desc}</p>
 					<span>Количество: {quantity}</span>
-					<BuyBtn />
+					<BuyBtn proucts={products} />
 					{/* <a className="btn buy_btn">Кнопка купить</a> */}
 				</div>
 			</div>
