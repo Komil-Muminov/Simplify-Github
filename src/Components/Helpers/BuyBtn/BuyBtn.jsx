@@ -11,7 +11,7 @@ export const BuyBtn = () => {
 			img,
 		}));
 		try {
-			const response = await fetch("http://localhost:3000/products", {
+			const response = await fetch("http://localhost:3000/productsServer", {
 				method: "post",
 				headers: {
 					"Content-Type": "application/json",
