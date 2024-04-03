@@ -1,7 +1,5 @@
 import "./BuyBtn.css";
-// import { Link } from "react-router-dom";
 import { products } from "../../Products/CardData/Products";
-import { useEffect } from "react";
 
 export const BuyBtn = () => {
 	const handlePost = async () => {

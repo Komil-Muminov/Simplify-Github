@@ -5,8 +5,9 @@ import "swiper/css/navigation";
 import "swiper/css";
 import "./Slider.css";
 import "./SliderMedia.css";
-import img from "./img/1.jpg";
-import img2 from "./img/2.jpg";
+import log from "./img/log.jpg";
+import slog from "./img/slog.png";
+import kit from "./img/kit.jpg";
 const SliderComponent = () => {
 	return (
 		<div className="slider__content">
@@ -19,16 +20,20 @@ const SliderComponent = () => {
 				>
 					<SwiperSlide className="slider_buy-content">
 						<Link>
-							<img src={img} alt="" className="slider_img" />
+							<img src={slog} alt="слоган" className="slider_img" />
 						</Link>
-						{/* <a className="slider_buy-btn">Компонент купить</a> */}
 					</SwiperSlide>
 
 					<SwiperSlide className="slider_buy-content">
 						<Link>
-							<img src={img2} alt="" className="slider_img" />
+							<img src={log} alt="логотип" className="slider_img" />
 						</Link>
-						{/* <a className="slider_buy-btn">Компонент купить</a> */}
+					</SwiperSlide>
+
+					<SwiperSlide className="slider_buy-content">
+						<Link>
+							<img src={kit} alt="кит" className="slider_img" />
+						</Link>
 					</SwiperSlide>
 				</Swiper>
 			</div>
