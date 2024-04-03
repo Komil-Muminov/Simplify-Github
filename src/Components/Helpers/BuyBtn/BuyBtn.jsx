@@ -3,7 +3,7 @@ import "./BuyBtn.css";
 import { products } from "../../Products/CardData/Products";
 
 export const BuyBtn = () => {
-	const handlePost = async (e) => {
+	const handlePost = async () => {
 		const data = products.map(({ id, title, desc, img }) => ({
 			id,
 			title,
