@@ -9,6 +9,10 @@
 .mySwiper {
 	width: 80%;
 	min-height: 200px;
+	backdrop-filter: blur(5px); /* Устанавливаем размытие фона на 5 пикселей */
+	background-color: rgba(221, 221, 221, 0.39); /* Цвет фона с прозрачностью */
+	border-radius: 20px;
+	/* Дополнительные стили по вашему усмотрению */
 }
 
 .swiper-button-prev,
