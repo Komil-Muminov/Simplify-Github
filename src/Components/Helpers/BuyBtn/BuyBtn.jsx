@@ -1,14 +1,9 @@
 import "./BuyBtn.css";
-import { products } from "../../Products/CardData/Products";
-
-export const BuyBtn = () => {
+import { useBusket } from "../useBusket/useBusket";
+export const BuyBtn = ({ id, title, desc, img, quantity }) => {
+	const { handleAddToBusket } = useBusket();
 	const handlePost = async () => {
-		const data = products.map(({ id, title, img, desc }) => ({
-			id,
-			title,
-			img,
-			desc,
-		}));
+		const data = [{ id, title, desc, img, quantity }];
 		try {
 			const response = await fetch("http://localhost:3000/productsServer", {
 				method: "post",
@@ -21,6 +16,7 @@ export const BuyBtn = () => {
 				console.log(`Ошибка ${response.status && response.statusText}`);
 			} else {
 				console.log(`Данные успешно отправлены ${JSON.stringify(data)}`);
+				handleAddToBusket(data);
 			}
 		} catch (error) {
 			console.log(`show ERRO:${error}`);
