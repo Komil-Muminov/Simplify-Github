@@ -1,5 +1,5 @@
 import "./Loading.css";
-export const Loading = () => {
+const Loading = () => {
 	return (
 		<>
 			<div className="loading__content">
@@ -9,3 +9,5 @@ export const Loading = () => {
 		</>
 	);
 };
+
+export default Loading;
