@@ -1,11 +1,11 @@
 // Error.jsx
 import "./RequestError.css";
 
-const RequestError = ({ message }) => {
+const RequestError = () => {
 	return (
 		<div className="error__container">
 			<div className="error__content">
-				<span className="error__message">{message}</span>
+				<span className="error__message"></span>
 			</div>
 		</div>
 	);
