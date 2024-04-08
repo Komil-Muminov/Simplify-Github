@@ -34,8 +34,8 @@ export const Footer = () => {
 							</div>
 							<div className="footer_adress">
 								<p className="footer_addres-text">
-									© 2024 ҶДММ «Симплифай». г. Душанбе, 101 мкр-н, ул.
-									Багаутдинова, 9
+									© 2024 ҶДММ «Феномен». Таджикистан. г. Душанбе, мкр-н
+									Испечак-2.
 								</p>
 							</div>
 						</div>
