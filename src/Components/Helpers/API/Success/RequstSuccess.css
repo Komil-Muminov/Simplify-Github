@@ -1,9 +1,9 @@
-.error__container {
+.success__container {
 	position: fixed;
 	top: 5%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #ff7b7b;
+	background-color: #4caf50;
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -13,14 +13,14 @@
 	transition: opacity 0.5s ease-in-out;
 }
 
-.error__container.hide {
+.success__container.hide {
 	opacity: 0;
 }
 
-.error__content {
+.success__content {
 	text-align: center;
 }
 
-.error__message {
+.success__message {
 	font-size: 16px;
 }

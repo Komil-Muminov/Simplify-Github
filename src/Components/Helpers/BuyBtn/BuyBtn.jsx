@@ -1,6 +1,9 @@
 import "./BuyBtn.css";
 import { useBusket } from "../useBusket/useBusket";
 import { useState } from "react";
+import RequsetLoading from "../API/Loading/RequsetLoading";
+import RequestError from "../API/Error/RequestError";
+import RequestSuccess from "../API/Success/RequestSuccess";
 export const BuyBtn = ({ id, title, desc, img, quantity }) => {
 	const { handleAddToBusket } = useBusket();
 	const [request, setRequest] = useState();
@@ -17,15 +20,14 @@ export const BuyBtn = ({ id, title, desc, img, quantity }) => {
 			});
 			if (!response.ok) {
 				console.log(`Ошибка ${response.status && response.statusText}`);
-				setRequest("Error");
 			} else {
-				alert(response);
 				console.log(`Данные успешно отправлены ${JSON.stringify(data)}`);
-				setRequest("Success");
 				handleAddToBusket(data);
+				setRequest("Success");
 			}
 		} catch (error) {
 			console.log(`show ERRO:${error}`);
+			setRequest("Error");
 		}
 	};
 	return (
@@ -33,6 +35,9 @@ export const BuyBtn = ({ id, title, desc, img, quantity }) => {
 			<button onClick={handlePost} className="buy_btn">
 				Компонент купить
 			</button>
+			{request === "Error" && <RequestError />}
+			{request === "Success" && <RequestSuccess />}
+			{request === "loading" && <RequsetLoading />}
 		</>
 	);
 };
