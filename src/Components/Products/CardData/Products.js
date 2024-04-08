@@ -32,10 +32,4 @@ export const products = [
 		title: "Чой",
 		desc: "Сиех",
 	},
-	// {
-	// 	id: uuidv4(),
-	// 	img: shopify5,
-	// 	title: "Чой",
-	// 	desc: "Сиех",
-	// },
 ];

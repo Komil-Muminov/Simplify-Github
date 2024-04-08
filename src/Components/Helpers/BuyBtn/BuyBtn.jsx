@@ -8,7 +8,6 @@ export const BuyBtn = ({ id, title, desc, img, quantity }) => {
 		const data = [{ id, title, desc, img, quantity }];
 		try {
 			setRequest("loading");
-			alert(response);
 			const response = await fetch("http://localhost:3000/productsServer", {
 				method: "post",
 				headers: {
@@ -20,6 +19,7 @@ export const BuyBtn = ({ id, title, desc, img, quantity }) => {
 				console.log(`Ошибка ${response.status && response.statusText}`);
 				setRequest("Error");
 			} else {
+				alert(response);
 				console.log(`Данные успешно отправлены ${JSON.stringify(data)}`);
 				setRequest("Success");
 				handleAddToBusket(data);
