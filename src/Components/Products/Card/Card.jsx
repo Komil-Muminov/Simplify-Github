@@ -6,7 +6,7 @@ export const Card = ({ id, title, desc, img, quantity }) => {
 		<>
 			<div className="cards">
 				<div className="card__content flex flex-wrap flex-col ">
-					<img src={img} alt="sda" className="card__img" />
+					<img src={img} alt="товар" className="card__img" />
 					<span className="discounts_presents">Блок скидок</span>
 					<Link href="#" className="card__info-title">
 						{" "}
