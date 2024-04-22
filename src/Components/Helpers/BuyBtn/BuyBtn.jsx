@@ -1,11 +1,9 @@
 import "./BuyBtn.css";
-import { useBusket } from "../useBusket/useBusket";
 import { useState } from "react";
 import RequsetLoading from "../API/Loading/RequsetLoading";
 import RequestError from "../API/Error/RequestError";
 import RequestSuccess from "../API/Success/RequestSuccess";
 export const BuyBtn = ({ id, title, desc, img, quantity }) => {
-	const { handleAddToBusket } = useBusket();
 	const [request, setRequest] = useState();
 	const handlePost = async () => {
 		const data = [{ id, title, desc, img, quantity }];
@@ -33,7 +31,7 @@ export const BuyBtn = ({ id, title, desc, img, quantity }) => {
 	return (
 		<>
 			<button onClick={handlePost} className="buy_btn">
-				Компонент купить
+				Компонент Корзина
 			</button>
 			{request === "Error" && <RequestError />}
 			{request === "Success" && <RequestSuccess />}
