@@ -1,9 +1,9 @@
-import "./BuyBtn.css";
+import "./BasketBtn.css";
 import { useState } from "react";
 import RequsetLoading from "../API/Loading/RequsetLoading";
 import RequestError from "../API/Error/RequestError";
 import RequestSuccess from "../API/Success/RequestSuccess";
-export const BuyBtn = ({ id, title, desc, img, quantity }) => {
+export const BasketBtn = ({ id, title, desc, img, quantity }) => {
 	const [request, setRequest] = useState();
 	const handlePost = async () => {
 		const data = [{ id, title, desc, img, quantity }];
@@ -20,7 +20,7 @@ export const BuyBtn = ({ id, title, desc, img, quantity }) => {
 				console.log(`Ошибка ${response.status && response.statusText}`);
 			} else {
 				console.log(`Данные успешно отправлены ${JSON.stringify(data)}`);
-				handleAddToBusket(data);
+				// handleAddToBusket(data);
 				setRequest("Success");
 			}
 		} catch (error) {

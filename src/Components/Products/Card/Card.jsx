@@ -1,6 +1,6 @@
 import "./cardContent.css";
-import { BuyBtn } from "../../Helpers/BuyBtn/BuyBtn";
 import { Link } from "react-router-dom";
+import { BasketBtn } from "../../Helpers/BuyBtn/BasketBtn";
 export const Card = ({ id, title, desc, img, quantity }) => {
 	return (
 		<>
@@ -13,7 +13,7 @@ export const Card = ({ id, title, desc, img, quantity }) => {
 						БлокTitle - {title}
 					</Link>
 					<p className="card__info-desc"> Блок Desc - {desc}</p>
-					<BuyBtn
+					<BasketBtn
 						id={id}
 						title={title}
 						desc={desc}
