@@ -3,6 +3,7 @@ import { useState } from "react";
 import RequsetLoading from "../API/Loading/RequsetLoading";
 import RequestError from "../API/Error/RequestError";
 import RequestSuccess from "../API/Success/RequestSuccess";
+// export const BasketBtn = () => {
 export const BasketBtn = ({ id, title, desc, img, quantity }) => {
 	const [request, setRequest] = useState();
 	const handlePost = async () => {
@@ -28,6 +29,7 @@ export const BasketBtn = ({ id, title, desc, img, quantity }) => {
 			setRequest("Error");
 		}
 	};
+
 	return (
 		<>
 			<button onClick={handlePost} className="buy_btn">

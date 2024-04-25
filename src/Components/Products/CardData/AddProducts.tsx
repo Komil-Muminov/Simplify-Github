@@ -2,7 +2,13 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const AddProducts = () => {
-	const [products, setProducts] = useState([
+	type Products = {
+		id: string;
+		discount: number;
+		title: string;
+		desc: string;
+	};
+	const [products, setProducts] = useState<Products[]>([
 		{
 			id: uuidv4(),
 			discount: 0,

@@ -1,7 +1,22 @@
 import "./cardContent.css";
 import { Link } from "react-router-dom";
 import { BasketBtn } from "../../Helpers/BuyBtn/BasketBtn";
+import { useEffect, useState } from "react";
+import { getProducts } from "../../Helpers/API/ApiDry";
 export const Card = ({ id, title, desc, img, quantity }) => {
+	const apiProductsBasket = "http://localhost:3000/productsServer";
+
+	const [basketData, setBasketData] = useState([]);
+
+	getProducts(apiProductsBasket);
+	const handlePromise = async () => {
+		setBasketData(await getProducts(apiProductsBasket));
+	};
+
+	useEffect(() => {
+		handlePromise();
+	}, []);
+
 	return (
 		<>
 			<div className="cards">
@@ -21,6 +36,11 @@ export const Card = ({ id, title, desc, img, quantity }) => {
 						quantity={quantity}
 					/>
 				</div>
+			</div>
+			<div>
+				{basketData.map((item) => (
+					<img key={item.id} src={item.img}></img>
+				))}
 			</div>
 		</>
 	);
