@@ -3,7 +3,7 @@ import "./Loading.css";
 // import Skeleton from "@mui/material/Skeleton";
 // import Stack from "@mui/material/Stack";
 
-const RequestLoading = () => {
+export const RequestLoading = () => {
 	const [visible, setVisible] = useState(true);
 
 	// Анимация исчезновения после 3 секунд
@@ -34,5 +34,3 @@ const RequestLoading = () => {
 		</>
 	);
 };
-
-export default RequestLoading;
